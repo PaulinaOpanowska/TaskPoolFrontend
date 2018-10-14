@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row justify-content-md-center bottomm">
+        <div class="col-md-auto center">
+            <h5>Tasks</h5>
+            <div class="box-tasks">
+                <button class="btn-primary btn-block mybtn"
+                *ngFor="let task of tasks; let i = index" mwlDraggable  (dragEnd)="dragEnd(task.id)">
+                        {{task.name}}
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="center col-sm silver">
+            <h6>{{users[1]?.fullName}}</h6>
+            <div class="box"
+                mwlDroppable
+                (drop)="dropEnd(users[1]?.id)">
+                
+                <button class="btn-primary btn-block mybtn"
+                *ngFor="let utask of users[1]?.tasks; let i = index" mwlDraggable  (dragEnd)="dragEnd(utask.id)">
+                    {{utask.name}}
+                </button>
+
+                <span>{{1 + 1}}</span>
+            </div>
+        </div>
+        <div class="center col-sm order-sm-first gold">
+                <h6>{{users[0]?.fullName}}</h6>
+                <div class="box"
+                    mwlDroppable
+                    (drop)="dropEnd(users[0]?.id)">
+                    
+                    <button class="btn-primary btn-block mybtn"
+                    *ngFor="let utask of users[0]?.tasks; let i = index" mwlDraggable  (dragEnd)="dragEnd(utask.id)">
+                        {{utask.name}}
+                    </button>
+    
+                    <span>{{0 + 1}}</span>
+                </div>
+        </div>
+        <div class="center col-sm order-sm-last brown">
+                <h6>{{users[2]?.fullName}}</h6>
+                <div class="box"
+                    mwlDroppable
+                    (drop)="dropEnd(users[2]?.id)">
+                    
+                    <button class="btn-primary btn-block mybtn"
+                    *ngFor="let utask of users[2]?.tasks; let i = index" mwlDraggable  (dragEnd)="dragEnd(utask.id)">
+                        {{utask.name}}
+                    </button>
+    
+                    <span>{{2 + 1}}</span>
+                </div>
+        </div>
+    </div>
+<br>
+    <div class="row">
+            <div class="center col-sm" *ngFor="let user of usersParts; let i = index">
+                    <h6>{{user.fullName}}</h6>
+                    <div class="box"
+                        mwlDroppable
+                        (drop)="dropEnd(user.id)">
+                        
+                        <button class="btn-primary btn-block mybtn"
+                        *ngFor="let utask of user.tasks; let i = index" mwlDraggable  (dragEnd)="dragEnd(utask.id)">
+                            {{utask.name}}
+                        </button>
+        
+                        <span>{{i + 3}}</span>
+                    </div>
+            </div>
+    </div>
+</div>

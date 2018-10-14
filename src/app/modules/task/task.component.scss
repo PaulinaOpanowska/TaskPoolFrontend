@@ -1,0 +1,72 @@
+.box-tasks {
+    background: #fff;
+    border-radius: 1px;
+    box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    -o-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    -ms-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    position:relative;
+    margin:0px auto;
+    clear:left;
+    height:auto;
+    z-index: 0;
+    text-align:center;
+    padding: 25px 15px;
+
+    @media screen and (min-width: 576px) {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .gold {
+        margin-top:10px;
+    }
+
+    .silver {
+        margin-top:30px;
+    }
+
+    .brown {
+        margin-top:50px;
+    }
+}
+
+.box {
+    border-radius: 1px;
+    box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    -o-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    -ms-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    margin:10px;
+    padding: 25px 15px;
+
+    span { display: flex; float: right; right: 5px; bottom: 2px; font-weight: bold; }
+}
+
+.mybtn {
+    background-color: #49c5b6;
+    border-color: #49c5b6;
+    display: inline-block;
+    font-weight: 400; 
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.bottomm {
+    margin-bottom: 20px;
+}

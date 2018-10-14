@@ -1,0 +1,15 @@
+// component css goes here
+.error-bg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+    width: 100%;
+    height: calc(100vh - 190px);
+}
+
+@media only screen and (min-width: 768px){
+    .error-bg {
+    height: 100%;
+    }
+}

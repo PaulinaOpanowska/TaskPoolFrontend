@@ -1,0 +1,5 @@
+{
+  "apiUrl": "https://localhost:44392/api/",
+  "production": "false",
+  "name":"TaskPool dev - api"
+}

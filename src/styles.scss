@@ -1,0 +1,98 @@
+$red: #FF0000;
+$green: rgb(22, 185, 22);
+$blue: #0000FF;
+$gray: rgba(255, 255, 255, 0.315);
+$orange:  rgb(255, 187, 0);
+
+/* You can add global styles to this file, and also import other style files */
+body {
+    background: #f5f5f5;
+}
+
+
+/*Toast*/
+#toast-container {
+    .toast {
+        padding: 15px 15px 15px 25px;
+    }
+    
+    .toast-success {
+        background-color: white;
+        border-left: 13px solid $green;
+        .toast-close-button,.toast-title,.toast-message {
+            color: $green;
+        }
+        .toast-progress {
+            background-color: $green;;
+            opacity: 0.2;
+        }
+    }
+
+    .toast-info {
+        background-color: white;
+        border-left: 13px solid $blue;
+        .toast-close-button,.toast-title,.toast-message {
+            color: $blue;
+        }
+        .toast-progress {
+            background-color: $blue;
+            opacity: 0.2;
+        }
+        
+    }
+    .toast-warning {
+        background-color: white;
+        border-left: 13px solid $orange;
+        .toast-close-button,.toast-title,.toast-message {
+            color: $orange;
+        }
+        .toast-progress {
+            background-color: $orange;
+            opacity: 0.2;
+        }
+    }
+    .toast-error {
+        background-color: white;
+        border-left: 13px solid $red;
+        .toast-close-button,.toast-title,.toast-message {
+            color: $red;
+        }
+        .toast-progress {
+            background-color: $red;;
+            opacity: 0.2;
+        }
+    }
+
+}
+/*Toast-end*/
+/*Alertify*/
+.alertify .ajs-modal .ajs-dialog {
+    .ajs-footer {
+        .btn {
+            color: #fff;
+            border: none;
+            border-radius: 0;
+            text-transform: uppercase;
+            box-shadow:none;
+
+            &.btn-primary {
+                background-color: $green;
+            }
+
+            &.btn-danger {
+                background-color: $gray;
+            }
+            &:hover{
+                opacity:0.75;
+            }
+        }
+
+    }
+    .ajs-body .ajs-content {
+        padding: 16px 0;
+    }
+    .ajs-reset,.ajs-commands.ajs-header{
+        display:none;
+    }
+
+}
